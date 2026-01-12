@@ -19,16 +19,18 @@ def clear():
 
 def selectFromList(items: list[str]) -> str:
     '''
+    Displays a numbered list of items and returns the user's selection.
+
     :param items: A list of strings.
     :type items: list[str]
-    :return: The selected characteristic from a given list.
+    :return selection: The user's selection.
     :rtype: str
     '''
     for index, item in enumerate(items):
         print(f"[{index + 1}] {item}")
     
-    characteristic = items[getInput(len(items)) - 1]
-    return characteristic
+    choiceIndex = getInput(len(items)) - 1
+    selection = items[choice]
 
 class character():
     def __init__(self, name = "N/A", gender = "N/A", hairColor = "N/A", eyeColor = "N/A", skinColor = "N/A", height = "N/A"):
