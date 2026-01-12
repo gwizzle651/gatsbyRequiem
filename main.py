@@ -1,74 +1,76 @@
+import ensurepip
 import keyboard
+import subprocess
+import sys
 import os
-import choices
+import words
 from time import sleep
+from words import dayStatus, firstQuestion
+from adventureLib import character, clear, selectFromList, getInput, pullChapter
 
-global choiceIndex = 0
+choiceIndex = 0
 
-def clear():
-    '''
-    Clears the terminal, allowing it to be easily read
-    '''
-    if os.name == "nt":
-        os.system("cls")
-    else:
-        os.system("clear")
-
-def selectFromList(items: list[str]) -> str:
-    '''
-    Displays a numbered list of items and returns the user's selection.
-
-    :param items: A list of strings.
-    :type items: list[str]
-    :return selection: The user's selection.
-    :rtype: str
-    '''
-    for index, item in enumerate(items):
-        print(f"[{index + 1}] {item}")
-    
-    choiceIndex = getInput(len(items)) - 1
-    selection = items[choice]
-
-    return selection
-
-def getInput(options: int) -> int:
-    '''
-    :param options: The amount of options, with the maximum of 10. (Buttons 1-0 on keyboard.)
-    :return choice: Returns an integer of 1-0, based on keyboard input.
-    '''
-    while True:
-        choice = keyboard.read_key()
+# Installs
+def ensurePip():
+    '''Attempts to ensure that pip is installed.\n
+    Uses ensurepip.bootstrap() and then get-pip methods.'''
+    try:
+        import pip  # noqa: F401
+    except ImportError:
         try:
-            if int(choice) == 0:
-                choice = 10
-            if int(choice) > options:
-                choice = options
-
-            return int(choice)
-        
+            ensurepip.bootstrap()
         except Exception:
-            choice = options
+            try:
+                import urllib.request
+                url = "https://bootstrap.pypa.io/get-pip.py"
+                with urllib.request.urlopen(url) as response:
+                    script = response.read()
+                exec(script, {'__name__': '__main__'})
+            except Exception as e:
+                print(f"Failed to install pip using any method: {e}")
+                sys.exit(1)
 
-            return int(choice)
+def install(package):
+    subprocess.check_call([
+        sys.executable,
+        "-m",
+        "pip",
+        "install",
+        "-qqq",
+        package])
 
 
+pkgs = {"keyboard"}
+
+for pkg in pkgs:
+    try:
+        import keyboard
+    except Exception:
+        try:
+            install(pkg)
+        except Exception as e:
+            print(f"Could not install {pkg}: {e}")
+            sys.exit(1)
+
+import keyboard
 # game start
-
+player = character("Owl Eyes", "Male", height="short")
 # add possible call to start music.
 
-introduction()
+pullChapter("Introduction", "introduction", player)
 
 sleep(3)
 selection = selectFromList(dayStatus)
 print(f"You: \"{selection}\"\n")
 sleep(2)
-
+clear()
 if choiceIndex != 0:
-   meetingInquiry()
+   pullChapter("Introduction", "meetingInquiry", player)
 choiceIndex = 0
 
 print("You: \"Anyways, let us begin.\"\n")
 sleep(1)
+clear()
 print("You: \"Tell me about...\"\n\n")
 
 selection = selectFromList(firstQuestion)
