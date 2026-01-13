@@ -254,9 +254,6 @@ def pullChapter(chapter: str, fileName: str, char: character):
             for line in file:
                 lines.append(line.strip())
         
-        '''# Debug
-        print(lines)'''
-
         traits = ["{name}", "{gender}", "{hairColor}", "{eyeColor}", "{skinColor}", "{height}", "{strength}", "{intellect}", "{dexterity}", "{health}"]
         charVars = [char.name, char.gender, char.hairColor, char.eyeColor, char.skinColor, char.height, str(char.strength), str(char.intellect), str(char.dexterity), str(char.health)]
 
@@ -266,6 +263,8 @@ def pullChapter(chapter: str, fileName: str, char: character):
                 lines[i] = Line.replace(trait, charVars[iteration])
             iteration += 1
 
-        for line in lines: print(line)
+        for line in lines:
+            print(line)
+            sleep(1)
     except FileNotFoundError as e:
         print(f"Could not open file: {e}")
