@@ -80,12 +80,9 @@ print("Gatsby: \"Yes, yes, let me think...\"\n")
 sleep(2)
 
 if choiceIndex == 0:
-    pass
-    #passion()
+    pullChapter("Passion", "passion", player)
 elif choiceIndex == 1:
-    pass
-    #ambition()
+    pullChapter("Ambition", "ambition", player)
 elif choiceIndex == 2:
-    pass
-    #greed()
+    pullChapter("Greed", "greed", player)
 
