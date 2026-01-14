@@ -30,7 +30,8 @@ def selectFromList(items: list[str]) -> str:
         print(f"[{index + 1}] {item}")
     
     choiceIndex = getInput(len(items)) - 1
-    selection = items[choice]
+    selection = items[choiceIndex]
+    return selection
 
 class character():
     def __init__(self, name = "N/A", gender = "N/A", hairColor = "N/A", eyeColor = "N/A", skinColor = "N/A", height = "N/A"):

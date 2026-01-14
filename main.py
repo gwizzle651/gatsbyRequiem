@@ -6,7 +6,7 @@ import os
 import words
 from time import sleep
 from words import dayStatus, firstQuestion
-from adventureLib import character, clear, selectFromList, getInput, pullChapter
+from adventureLib import character, clear, selectFromList, pullChapter
 
 choiceIndex = 0
 
@@ -79,6 +79,7 @@ sleep(2)
 print("Gatsby: \"Yes, yes, let me think...\"\n")
 sleep(2)
 
+# TODO Code in the options here for choices. The introduction should be complete before this.
 if choiceIndex == 0:
     pullChapter("Passion", "passion", player)
 elif choiceIndex == 1:
