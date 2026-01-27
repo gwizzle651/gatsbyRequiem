@@ -1,0 +1,11 @@
+Gatsby sits across from a grim man at a cafe. He is dressed in a military uniform, and is currently in the process of devouring a sandwich.
+???: “Do you know why I wanted to meet with you today, Mr. Gatsby?”
+IF GATSBY: “Not sure, old sport, but if you want to talk business I’m happy to oblige”
+IF GATZ: Mr. Gatz continues eating his sandwich, only momentarily stopping to look up.
+???: “My name is Wolfsheim. Meyer Wolfsheim. I have a proposal to make”
+GATSBY: “And why do you need me specifically for this?”
+WOLFSHEIM: “Your military career is, quite frankly, stunning. Also, you have a reputation for drive and ambition that I find promising.”
+GATSBY: “I’d say all of those things are true. What do you need me for?”
+WOLFSHEIM: “I need your help in some matters of utmost confidentiality. Before I disclose more information, I need to know if I can trust you to keep this between the two of us.”
+GATSBY: “Now, old sport, this isn’t something… criminal, is it?”
+WOLFSHEIM: “I’m afraid that the business I’m asking you to partake in might involve some extralegal affairs”

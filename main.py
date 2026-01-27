@@ -55,30 +55,42 @@ for pkg in pkgs:
 import keyboard
 # game start
 player = character("Owl Eyes", "Male", height="short")
+meetingOptions = ["One more haul", "Row towards it"]
 # add possible call to start music.
 
 pullChapter("Introduction", "introduction", player)
 
+# Introduction
 sleep(3)
-selection = selectFromList(dayStatus)
-print(f"You: \"{selection}\"\n")
+choiceIndex = selectFromList(dayStatus)
+print(f"You: \"{choiceIndex}\"\n")
 sleep(2)
 clear()
-if choiceIndex != 0:
+# If the user decides to ask about Gatsby, A brief dialouge will proceed
+if choiceIndex != dayStatus[0]:
    pullChapter("Introduction", "meetingInquiry", player)
-choiceIndex = 0
+   print("You: \"Anyways, let us begin.\"\n")
+choiceIndex = ""
 
-print("You: \"Anyways, let us begin.\"\n")
+# Start of inquiry
 sleep(1)
-clear()
-print("You: \"Tell me about...\"\n\n")
+#print("You: \"Tell me about...\"\n\n")
 
-selection = selectFromList(firstQuestion)
-print(f"You: \"{selection}\"\n")
+#print(f"You: \"Tell me how this began.\"\n")
 sleep(2)
 print("Gatsby: \"Yes, yes, let me think...\"\n")
 sleep(2)
+pullChapter("Meeting", "meeting0", player)
+initialChoices = ["One more haul", "Return Home"]
+choiceIndex = selectFromList(initialChoices)
+if choiceIndex == initialChoices[1]:
+    clear()
+    pullChapter("Meeting", "returnHome", player)
+    sys.exit()
 
+
+
+'''
 # TODO Code in the options here for choices. The introduction should be complete before this.
 if choiceIndex == 0:
     pullChapter("Passion", "passion", player)
@@ -87,3 +99,4 @@ elif choiceIndex == 1:
 elif choiceIndex == 2:
     pullChapter("Greed", "greed", player)
 
+'''
