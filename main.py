@@ -1,12 +1,10 @@
 import ensurepip
-import keyboard
 import subprocess
 import sys
 import os
 import words
 from time import sleep
 from words import dayStatus, firstQuestion
-from adventureLib import character, clear, selectFromList, pullChapter
 
 choiceIndex = 0
 
@@ -53,6 +51,7 @@ for pkg in pkgs:
             sys.exit(1)
 
 import keyboard
+from adventureLib import character, clear, selectFromList, pullChapter
 # game start
 player = character("Owl Eyes", "Male", height="short")
 meetingOptions = ["One more haul", "Row towards it"]
