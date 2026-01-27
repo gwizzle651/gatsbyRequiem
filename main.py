@@ -56,6 +56,7 @@ import keyboard
 # game start
 player = character("Owl Eyes", "Male", height="short")
 meetingOptions = ["One more haul", "Row towards it"]
+stage = "intro"
 # add possible call to start music.
 
 pullChapter("Introduction", "introduction", player)
@@ -88,7 +89,23 @@ if choiceIndex == initialChoices[1]:
     pullChapter("Meeting", "returnHome", player)
     sys.exit()
 
+iteration = 1
+while iteration != 5:
+    pullChapter("Meeting", f"meeting{iteration}", player)
+    # TODO Something's wrong with this IF statement. Gwizzle, please fix later
+    choiceIndex = selectFromList(meetingOptions)
+    if choiceIndex == selectFromList[0]:
+        iteration += 1
+    else:
+        pullChapter("Meeting", "row", player)
+        stage = "greed"
+        break
 
+if iteration == 5 and stage != "greed":
+    pullChapter("Meeting", "meeting5", player)
+    sys.exit()
+
+print(f"You have reached the {stage} stage. ")
 
 '''
 # TODO Code in the options here for choices. The introduction should be complete before this.
