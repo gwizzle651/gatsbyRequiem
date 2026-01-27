@@ -1,0 +1,5 @@
+Thank you for playing!
+
+adventureLib, main.py: Logan Rydbom
+main.py: Gabriel Sharp
+Chapters (Story): Nathaniel Winfield

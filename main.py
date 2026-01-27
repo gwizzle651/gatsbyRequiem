@@ -58,62 +58,111 @@ player = character("Owl Eyes", "Male", height="short")
 meetingOptions = ["One more haul", "Row towards it"]
 stage = "intro"
 # add possible call to start music.
+for i in range(3):
+    pullChapter("Introduction", "introduction", player)
 
-pullChapter("Introduction", "introduction", player)
-
-# Introduction
-sleep(3)
-choiceIndex = selectFromList(dayStatus)
-print(f"You: \"{choiceIndex}\"\n")
-sleep(2)
-clear()
-# If the user decides to ask about Gatsby, A brief dialouge will proceed
-if choiceIndex != dayStatus[0]:
-   pullChapter("Introduction", "meetingInquiry", player)
-   print("You: \"Anyways, let us begin.\"\n")
-choiceIndex = ""
-
-# Start of inquiry
-sleep(1)
-#print("You: \"Tell me about...\"\n\n")
-
-#print(f"You: \"Tell me how this began.\"\n")
-sleep(2)
-print("Gatsby: \"Yes, yes, let me think...\"\n")
-sleep(2)
-pullChapter("Meeting", "meeting0", player)
-initialChoices = ["One more haul", "Return Home"]
-choiceIndex = selectFromList(initialChoices)
-if choiceIndex == initialChoices[1]:
+    # Introduction
+    sleep(3)
+    choiceIndex = selectFromList(dayStatus)
     clear()
-    pullChapter("Meeting", "returnHome", player)
-    sys.exit()
-
-iteration = 1
-while iteration != 5:
-    pullChapter("Meeting", f"meeting{iteration}", player)
-    # TODO Something's wrong with this IF statement. Gwizzle, please fix later
-    choiceIndex = selectFromList(meetingOptions)
-    if choiceIndex == meetingOptions[0]:
-        iteration += 1
+    print(f"You: \"{choiceIndex}\"\n")
+    sleep(2)
+    # If the user decides to ask about Gatsby, A brief dialouge will proceed
+    if choiceIndex != dayStatus[0]:
+       pullChapter("Introduction", "meetingInquiry", player)
+       print("You: \"Anyways, let us begin.\"\n")
     else:
-        pullChapter("Meeting", "row", player)
-        stage = "greed"
-        break
+        print("YOU: Tell me about how all this began.\n")
+    choiceIndex = ""
 
-if iteration == 5 and stage != "greed":
-    pullChapter("Meeting", "meeting5", player)
-    sys.exit()
+    # Start of inquiry
+    sleep(2)
+    print("Gatsby: \"Yes, yes, let me think...\"\n")
+    sleep(2)
+    pullChapter("Meeting", "meeting0", player)
+    initialChoices = ["One more haul", "Return Home"]
+    choiceIndex = selectFromList(initialChoices)
+    if choiceIndex == initialChoices[1]:
+        clear()
+        pullChapter("Meeting", "returnHome", player)
+        sys.exit()
 
-print(f"You have reached the {stage} stage. ")
+    clear()
+    iteration = 1
+    while iteration != 5:
+        pullChapter("Meeting", f"meeting{iteration}", player)
+        choiceIndex = selectFromList(meetingOptions)
+        if choiceIndex == meetingOptions[0]:
+            iteration += 1
+            clear()
+        else:
+            clear()
+            pullChapter("Meeting", "row", player)
+            stage = "greed"
+            break
 
-'''
-# TODO Code in the options here for choices. The introduction should be complete before this.
-if choiceIndex == 0:
-    pullChapter("Passion", "passion", player)
-elif choiceIndex == 1:
-    pullChapter("Ambition", "ambition", player)
-elif choiceIndex == 2:
-    pullChapter("Greed", "greed", player)
+    if iteration == 5 and stage != "greed":
+        pullChapter("Meeting", "meeting5", player)
+        sys.exit()
 
-'''
+    sleep(5)
+# ---------------------
+# GREED (Chapters/Traits/Greed/greed0.txt)
+# ---------------------
+    greedChoices = ["Get involved", "Stay Honest", "Be a hero?"]
+    clear()
+    pullChapter("Traits/Greed", "greed0", player)
+    choiceIndex = selectFromList(greedChoices)
+    if choiceIndex == greedChoices[0]:
+        pullChapter("Traits/Greed", "involved", player)
+        stage = "passionA"
+        clear()
+    elif choiceIndex == greedChoices[1]:
+        pullChapter("Traits/Greed", "honesty", player)
+        stage = "passionB"
+        clear()
+    else: 
+        pullChapter("Traits/Greed", "hero", player)
+        sleep(5)
+        sys.exit()
+    
+    sleep(5)
+
+# ---------------------
+# PASSION (Chapters/Traits/Passion ({letter})/passion.txt)
+# ---------------------
+    passionChoices = ["Back down", "Stand up"]
+    if stage == "passionA":
+        pullChapter("Traits/Passion (A)", "passion", player)
+        choiceIndex = selectFromList(passionChoices)
+        clear()
+        if choiceIndex == passionChoices[0]:
+            pullChapter("Traits/Passion (A)", "backDown", player)
+            sleep(5)
+            clear()
+        else:
+            pullChapter("Traits/Passion (A)", "standUp", player)
+            sleep(5)
+            clear()
+    else:
+        pullChapter("Traits/Passion (B)", "passion", player)
+        choiceIndex = selectFromList(passionChoices)
+        clear()
+        if choiceIndex == passionChoices[0]:
+            pullChapter("Traits/Passion (B)", "backDown", player)
+            sleep(5)
+            clear()
+        else:
+            pullChapter("Traits/Passion (B)", "standUp", player)
+            sleep(5)
+            clear()
+
+stage = "desire"
+# ---------------------
+# Desire (Chapters/Traits/Desire/desire0.txt)
+# ---------------------
+pullChapter("Traits/Desire", "desire", player)
+sleep(5)
+clear()
+pullChapter("Conclusion", "end", player)
+sleep(30)
