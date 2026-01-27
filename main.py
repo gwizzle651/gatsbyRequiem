@@ -94,7 +94,7 @@ while iteration != 5:
     pullChapter("Meeting", f"meeting{iteration}", player)
     # TODO Something's wrong with this IF statement. Gwizzle, please fix later
     choiceIndex = selectFromList(meetingOptions)
-    if choiceIndex == selectFromList[0]:
+    if choiceIndex == meetingOptions[0]:
         iteration += 1
     else:
         pullChapter("Meeting", "row", player)
