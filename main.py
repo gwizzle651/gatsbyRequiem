@@ -113,20 +113,22 @@ for i in range(3):
     clear()
     pullChapter("Traits/Greed", "greed0", player)
     choiceIndex = selectFromList(greedChoices)
+    clear()
     if choiceIndex == greedChoices[0]:
         pullChapter("Traits/Greed", "involved", player)
+        sleep(5)
         stage = "passionA"
         clear()
     elif choiceIndex == greedChoices[1]:
         pullChapter("Traits/Greed", "honesty", player)
+        sleep(5)
         stage = "passionB"
         clear()
     else: 
         pullChapter("Traits/Greed", "hero", player)
         sleep(5)
         sys.exit()
-    
-    sleep(5)
+
 
 # ---------------------
 # PASSION (Chapters/Traits/Passion ({letter})/passion.txt)
