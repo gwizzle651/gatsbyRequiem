@@ -1,4 +1,4 @@
-You push Gatsby towards the pursuit of greatness.
-GATSBY: “I can keep a secret. Now, tell me more about this job…”
-And so Gatsby began to build his fortune and his empire. Mr. Wolfsheim would be a longtime ally to the young millionaire, teaching him the finer points of criminal life. 
-Then, one October day, he would meet a young aristocrat named Daisy Fay, and his life would change forever…
+You push {name} towards the pursuit of greatness.
+{name}: “I can keep a secret. Now, tell me more about this job…”
+And so {name} began to build his fortune and his empire. Mr. WOLFSHEIM would be a longtime ally to the young millionaire, teaching him the finer points of criminal life. 
+Then, one October day, he would meet a young aristocrat named DAISY FAY, and his life would change forever…

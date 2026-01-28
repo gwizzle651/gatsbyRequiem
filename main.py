@@ -50,57 +50,61 @@ for pkg in pkgs:
 import keyboard
 from adventureLib import character, clear, selectFromList, pullChapter
 # game start
-player = character("Owl Eyes", "Male", height="short")
+player = character("GATSBY", "Male", height="short")
 meetingOptions = ["One more haul", "Row towards it"]
 dayStatus = ["It doesn't matter how my day has been.", "It goes as well as any day does for one such as myself."]
 stage = "intro"
-# add possible call to start music.
-for i in range(3):
+# ---------------------
+# MAIN
+# ---------------------
+def main(player: character, meetingOptions, dayStatus, stage):
+    player.name = "GATSBY"
     pullChapter("Introduction", "introduction", player)
 
     # Introduction
     sleep(3)
     choiceIndex = selectFromList(dayStatus)
     clear()
-    print(f"You: \"{choiceIndex}\"\n")
+    print(f"YOU: \"{choiceIndex}\"\n")
     sleep(2)
     # If the user decides to ask about Gatsby, A brief dialouge will proceed
     if choiceIndex != dayStatus[0]:
        pullChapter("Introduction", "meetingInquiry", player)
-       print("You: \"Anyways, let us begin.\"\n")
+       print("YOU: \"Anyways, let us begin.\"\n")
     else:
-        print("YOU: Tell me about how all this began.\n")
+        print("YOU: \"Tell me about how all this began.\"\n")
     choiceIndex = ""
 
     # Start of inquiry
     sleep(2)
-    print("Gatsby: \"Yes, yes, let me think...\"\n")
+    print("GATSBY: \"Yes, yes, let me think...\"\n")
     sleep(2)
     pullChapter("Meeting", "meeting0", player)
-    initialChoices = ["One more haul"]
+    initialChoices = ["One more haul", "Return Home"]
     choiceIndex = selectFromList(initialChoices)
-    '''if choiceIndex == initialChoices[1]:
+    if choiceIndex == initialChoices[1]:
         clear()
         pullChapter("Meeting", "returnHome", player)
-        sys.exit()'''
+        player.name = "JAMES GATZ"
 
     clear()
-    iteration = 1
-    while iteration != 5:
-        pullChapter("Meeting", f"meeting{iteration}", player)
-        choiceIndex = selectFromList(meetingOptions)
-        if choiceIndex == meetingOptions[0]:
-            iteration += 1
-            clear()
-        else:
-            clear()
-            pullChapter("Meeting", "row", player)
-            stage = "greed"
-            break
+    if player.name != "JAMES GATZ":
+        iteration = 1
+        while iteration != 5:
+            pullChapter("Meeting", f"meeting{iteration}", player)
+            choiceIndex = selectFromList(meetingOptions)
+            if choiceIndex == meetingOptions[0]:
+                iteration += 1
+                clear()
+            else:
+                clear()
+                pullChapter("Meeting", "row", player)
+                stage = "greed"
+                break
 
-    if iteration == 5 and stage != "greed":
-        pullChapter("Meeting", "meeting5", player)
-        sys.exit()
+        if iteration == 5 and stage != "greed":
+            pullChapter("Meeting", "meeting5", player)
+            return
 
     sleep(5)
 # ---------------------
@@ -124,7 +128,7 @@ for i in range(3):
     else: 
         pullChapter("Traits/Greed", "hero", player)
         sleep(5)
-        sys.exit()
+        return
 
 
 # ---------------------
@@ -156,6 +160,9 @@ for i in range(3):
             sleep(5)
             clear()
 
+# Main Loop
+for i in range(3):
+    main(player, meetingOptions, dayStatus, stage)
 stage = "desire"
 # ---------------------
 # Desire (Chapters/Traits/Desire/desire0.txt)

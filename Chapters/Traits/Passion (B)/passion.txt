@@ -7,9 +7,9 @@ Not here. Not yet.
 You return to the hotel. It is a hot summer day, and the emotions of the room reflect the temperature.
 There are five people in the room. Only three of them matter to you.
 It is about to happen.
-Gatsby and Tom stand in the center of the room. Their rage is palpable.
-GATSBY: “She never loved you, Tom. I waited too long, and she married you in the meantime. But she’s never truly loved you.”
-TOM: “Come on, Daisy, let’s get out of here. Clearly your friend has had too much to drink. He’s nearly blacked out.”
-GATSBY: “No, old sport, I’m not the blind one here. Your wife doesn’t love you anymore.”
+{name} and TOM stand in the center of the room. Their rage is palpable.
+{name}: “She never loved you, TOM. I waited too long, and she married you in the meantime. But she’s never truly loved you.”
+TOM: “Come on, DAISY, let’s get out of here. Clearly your friend has had too much to drink. He’s nearly blacked out.”
+{name}: “No, old sport, I’m not the blind one here. Your wife doesn’t love you anymore.”
 TOM: “I think that’s quite enough out of you…”
-Tom approaches Gatsby and grasps his collar, beginning to push him out of the room.
+TOM approaches {name} and grasps his collar, beginning to push him out of the room.

@@ -1,6 +1,6 @@
-You purge the thoughts of ambition from Gatsby’s mind.
-GATSBY: “I’m sorry, old sport, I’m afraid I can’t agree to that.”
+You purge the thoughts of ambition from {name}’s mind.
+{name}: “I’m sorry, old sport, I’m afraid I can’t agree to that.”
 WOLFSHEIM: “Well… that’s a shame. It was a pleasure meeting you, friend.”
-Wolfsheim abandons Gatsby with his sandwich.
+WOLFSHEIM abandons {name} with his sandwich.
 A month later, he has become a rather successful businessman, managing a small chain of drugstores across New York. With his newfound riches, he purchases a small cottage on West Egg. 
-It is there, at a garden party in the old mansion just up the road, where he would meet a young aristocrat named Daisy Fay, and his life would change forever…
+It is there, at a garden party in the old mansion just up the road, where he would meet a young aristocrat named DAISY FAY, and his life would change forever…

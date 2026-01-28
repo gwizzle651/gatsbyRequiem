@@ -1,18 +1,18 @@
 You realize it now.
-Gatsby cannot be saved while his obsession with Daisy festers.
+{name} cannot be saved while his obsession with DAISY festers.
 It must be destroyed.
 You stand in black water. There is no light in this place.
 No light, save for one.
 You see it, a sickly green light flashing over the horizon. This is the Thing Within. This is everything you exist to destroy. It is the corruption of ambition, it is the ravenous pit of greed, it is all the rage and red and violent, bloody emotion of passion. This is the Thing Within them all, but it is strongest where there is power.
 However, there are other sources of power.
-Your light is brighter and stronger and cleaner than the one within Gatsby. It burns away the green light and replaces it, a flickering candle brought into the devouring presence of the sun. You are the Owl above all, the Eyes that cannot be fooled, the cleansing and purifying hope of the One True Dream. You are carried in the hearts of immigrants and settlers, within the minds of visionaries and truth-seekers, the holiest of all, the American God. Your light alone shines above the others. Your light alone remains.
+Your light is brighter and stronger and cleaner than the one within {name}. It burns away the green light and replaces it, a flickering candle brought into the devouring presence of the sun. You are the Owl above all, the Eyes that cannot be fooled, the cleansing and purifying hope of the One True Dream. You are carried in the hearts of immigrants and settlers, within the minds of visionaries and truth-seekers, the holiest of all, the American God. Your light alone shines above the others. Your light alone remains.
 …
 …
 …
-Gatsby is free now. You have succeeded.
+{name} is free now. You have succeeded.
 However, there are others like him.
-Those whose lights have been corrupted by power, lust, or greed. Those like Gatsby, who were once great and can be made great again.
-Those whose lights have been dimmed by oppression and injustice, and by the diseased lights of others. Those like George, whose fading lights are finally snuffed.
-Those who must hide their light, for fear of their extinguishment or exploitation. Those like Daisy, who are left weak and powerless by the system they are chained to.
-No, Gatsby turned out all right in the end.
+Those whose lights have been corrupted by power, lust, or greed. Those like {name}, who were once great and can be made great again.
+Those whose lights have been dimmed by oppression and injustice, and by the diseased lights of others. Those like GEORGE, whose fading lights are finally snuffed.
+Those who must hide their light, for fear of their extinguishment or exploitation. Those like DAISY, who are left weak and powerless by the system they are chained to.
+No, {name} turned out all right in the end.
 The Thing that preyed on him is dead, and you are coming after the others.

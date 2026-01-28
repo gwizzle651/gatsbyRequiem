@@ -7,9 +7,9 @@ Not here. Not yet.
 You return to the hotel. It is a hot summer day, and the emotions of the room reflect the temperature.
 There are five people in the room. Only three of them matter to you.
 It is about to happen.
-Gatsby and Tom stand in the center of the room. Their rage is palpable.
-GATSBY: “She never loved you, Tom. I waited too long, and she married you in the meantime. But she’s never truly loved you.”
-TOM: “You’re a liar, Gatsby. Daisy, he’s been lying to you this whole time. Why, he even lied about his job. Go on, Gatsby, tell her what you do.”
-GATSBY: “I… I run a drugstore chain… you know that, Daisy.”
+{name} and TOM stand in the center of the room. Their rage is palpable.
+{name}: “She never loved you, TOM. I waited too long, and she married you in the meantime. But she’s never truly loved you.”
+TOM: “You’re a liar, {name}. DAISY, he’s been lying to you this whole time. Why, he even lied about his job. Go on, {name}, tell her what you do.”
+{name}: “I… I run a drugstore chain… you know that, DAISY.”
 TOM: “Just tell her you’re a bootlegger, why don’t you? We all know it, the whole city knows it.”
-DAISY: “Jay… it’s not true, is it?”
+DAISY: “{name}… it’s not true, is it?”

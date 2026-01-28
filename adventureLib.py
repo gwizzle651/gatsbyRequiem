@@ -266,6 +266,6 @@ def pullChapter(chapter: str, fileName: str, char: character):
 
         for line in lines:
             print(line)
-            sleep(1)
+            sleep(2.5)
     except FileNotFoundError as e:
         print(f"Could not open file: {e}")

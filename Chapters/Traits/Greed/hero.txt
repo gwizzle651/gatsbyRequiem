@@ -1,7 +1,7 @@
-You flood Gatsby with a desire for justice. A plan begins to form.
-GATSBY: “I can keep a secret. Now, tell me more about this job, old sport”
+You flood {name} with a desire for justice. A plan begins to form.
+{name}: “I can keep a secret. Now, tell me more about this job, old sport”
 WOLFSHEIM: “Excellent, I knew you would be the man for the job. Now, as you know, the World Series is approaching…”
-As Gatsby listens, you memorize names, locations, and times. You can make a difference. He can make a difference…
-A month later, entrepreneur Jay Gatsby is found dead in his apartment, throat slit and molars pried out. This bizarre killing remains unsolved to this day. The only hint as to the perpetrator is a stylized W found on the murder weapon, and the fact that a majority of the Wolfsheim Syndicate’s members were arrested the day prior to the murder.
+As {name} listens, you memorize names, locations, and times. You can make a difference. He can make a difference…
+A month later, entrepreneur {name} is found dead in his apartment, throat slit and molars pried out. This bizarre killing remains unsolved to this day. The only hint as to the perpetrator is a stylized W found on the murder weapon, and the fact that a majority of the Wolfsheim Syndicate’s members were arrested the day prior to the murder.
 You have failed.
 GAME OVER

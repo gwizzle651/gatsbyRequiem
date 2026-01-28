@@ -1,5 +1,5 @@
-You force humility and honesty into Gatsby.
-GATSBY: “Alright, alright, I’ll leave. Let’s go, Daisy.”
-The five depart the hotel in silence. While driving Daisy home, Gatsby accidentally strikes and kills Tom’s mistress, Myrtle. A day later, Gatsby is shot dead at his pool by George Wilson, her widower.
+You force humility and honesty into {name}.
+{name}: “Alright, alright, I’ll leave. Let’s go, DAISY.”
+The five depart the hotel in silence. While driving DAISY home, {name} accidentally strikes and kills TOM's mistress, MYRTLE. A day later, {name} is shot dead at his pool by GEORGE WILSON, her widower.
 You have failed.
 GAME OVER

@@ -1,6 +1,6 @@
-You give Gatsby a boost of confidence.
-Gatsby breaks Tom’s grip, then breaks his nose. Tom staggers backwards, utterly shocked. A small fight ensues, ending with Gatsby as the winner.
-GATSBY: “Let’s go home, Daisy. I think your husband needs some time alone.”
-The five depart the hotel in silence. While driving Daisy home, Gatsby accidentally strikes and kills Tom’s mistress, Myrtle. A day later, Gatsby is shot dead at his pool by George Wilson, her widower.
+You give {name} a boost of confidence.
+{name} breaks TOM's grip, then breaks his nose. TOM staggers backwards, utterly shocked. A small fight ensues, ending with {name} as the winner.
+{name}: “Let’s go home, DAISY. I think your husband needs some time alone.”
+The five depart the hotel in silence. While driving DAISY home, {name} accidentally strikes and kills TOM's mistress, MYRTLE. A day later, {name} is shot dead at his pool by GEORGE WILSON, her widower.
 You have failed.
 GAME OVER
