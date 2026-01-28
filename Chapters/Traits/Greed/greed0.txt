@@ -1,7 +1,6 @@
 Gatsby sits across from a grim man at a cafe. He is dressed in a military uniform, and is currently in the process of devouring a sandwich.
 ???: “Do you know why I wanted to meet with you today, Mr. Gatsby?”
-IF GATSBY: “Not sure, old sport, but if you want to talk business I’m happy to oblige”
-IF GATZ: Mr. Gatz continues eating his sandwich, only momentarily stopping to look up.
+GATSBY: “Not sure, old sport, but if you want to talk business I’m happy to oblige”
 ???: “My name is Wolfsheim. Meyer Wolfsheim. I have a proposal to make”
 GATSBY: “And why do you need me specifically for this?”
 WOLFSHEIM: “Your military career is, quite frankly, stunning. Also, you have a reputation for drive and ambition that I find promising.”
