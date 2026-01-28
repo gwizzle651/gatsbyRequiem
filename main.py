@@ -77,12 +77,12 @@ for i in range(3):
     print("Gatsby: \"Yes, yes, let me think...\"\n")
     sleep(2)
     pullChapter("Meeting", "meeting0", player)
-    initialChoices = ["One more haul", "Return Home"]
+    initialChoices = ["One more haul"]
     choiceIndex = selectFromList(initialChoices)
-    if choiceIndex == initialChoices[1]:
+    '''if choiceIndex == initialChoices[1]:
         clear()
         pullChapter("Meeting", "returnHome", player)
-        sys.exit()
+        sys.exit()'''
 
     clear()
     iteration = 1
