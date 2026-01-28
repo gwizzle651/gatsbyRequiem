@@ -1,6 +1,6 @@
 YOU: Tell me about your meeting, earlier today.
 GATSBY: It was... eventful. It was the first time I've seen her in five years.
-YOU: How sid it go?
+YOU: How did it go?
 GATSBY: She still loves me, I know she does.
 YOU: And she is still with Buchanan?
 GATSBY: Yes, yes, of course...
