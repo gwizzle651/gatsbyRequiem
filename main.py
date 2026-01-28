@@ -1,10 +1,7 @@
 import ensurepip
 import subprocess
 import sys
-import os
-import words
 from time import sleep
-from words import dayStatus, firstQuestion
 
 choiceIndex = 0
 
@@ -55,6 +52,7 @@ from adventureLib import character, clear, selectFromList, pullChapter
 # game start
 player = character("Owl Eyes", "Male", height="short")
 meetingOptions = ["One more haul", "Row towards it"]
+dayStatus = ["It doesn't matter how my day has been.", "It goes as well as any day does for one such as myself."]
 stage = "intro"
 # add possible call to start music.
 for i in range(3):
